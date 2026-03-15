@@ -1,0 +1,103 @@
+name: ecommerce
+description: "A Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #Packages
+  flutter_svg: ^2.2.4
+  cupertino_icons: ^1.0.8
+  mask_text_input_formatter: ^2.9.0
+  flutter_staggered_grid_view: ^0.7.0
+
+  #State
+  dio: ^5.9.2
+  intl: ^0.20.2
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+  path_provider: ^2.1.5
+  riverpod: ^3.2.1
+  go_router: ^17.1.0
+  flutter_riverpod: ^3.3.1
+
+  #Firebase
+  firebase_core: ^4.5.0
+  firebase_auth: ^6.2.0
+  cloud_firestore: ^6.1.3
+
+  #UI Utilities
+  flutter_easyloading: ^3.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  #Assets
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/images/
+
+  #Fonts
+  fonts:
+    - family: poppins
+      fonts:
+        - asset: assets/fonts/poppins/poppins_thin.ttf
+          weight: 100
+        - asset: assets/fonts/poppins/poppins_extraLight.ttf
+          weight: 200
+        - asset: assets/fonts/poppins/poppins_light.ttf
+          weight: 300
+        - asset: assets/fonts/poppins/poppins_regular.ttf
+          weight: 400
+        - asset: assets/fonts/poppins/poppins_medium.ttf
+          weight: 500
+        - asset: assets/fonts/poppins/poppins_semiBold.ttf
+          weight: 600
+        - asset: assets/fonts/poppins/poppins_bold.ttf
+          weight: 700
+        - asset: assets/fonts/poppins/poppins_extraBold.ttf
+          weight: 800
+        - asset: assets/fonts/poppins/poppins_black.ttf
+          weight: 900
+    - family: sfPro
+      fonts:
+        - asset: assets/fonts/sf_pro/sf_pro_regular.OTF
+          weight: 400
+        - asset: assets/fonts/sf_pro/sf_pro_medium.OTF
+          weight: 500
+        - asset: assets/fonts/sf_pro/sf_pro_bold.OTF
+          weight: 700
+    - family: dmSans
+      fonts:
+        - asset: assets/fonts/dm_sans/dm_sans_thin.ttf
+          weight: 100
+        - asset: assets/fonts/dm_sans/dm_sans_extraLight.ttf
+          weight: 200
+        - asset: assets/fonts/dm_sans/dm_sans_light.ttf
+          weight: 300
+        - asset: assets/fonts/dm_sans/dm_sans_regular.ttf
+          weight: 400
+        - asset: assets/fonts/dm_sans/dm_sans_medium.ttf
+          weight: 500
+        - asset: assets/fonts/dm_sans/dm_sans_semiBold.ttf
+          weight: 600
+        - asset: assets/fonts/dm_sans/dm_sans_bold.ttf
+          weight: 700
+        - asset: assets/fonts/dm_sans/dm_sans_extraBold.ttf
+          weight: 800
+        - asset: assets/fonts/dm_sans/dm_sans_black.ttf
+          weight: 900

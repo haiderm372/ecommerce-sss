@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "903112303993",
+    "project_id": "ecommerce-5813b",
+    "storage_bucket": "ecommerce-5813b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903112303993:android:1de94e7542870150a53ba8",
+        "android_client_info": {
+          "package_name": "com.haider.apps.ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOaq8qsHkerVDWTGoyFK0av3D7l3REGDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
