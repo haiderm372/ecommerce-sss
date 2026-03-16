@@ -7,7 +7,9 @@ import '../service/auth_service_provider.dart';
 import 'auth_state.dart';
 import '../auth_screen.dart';
 import '../../layout/layout_screen.dart';
+import '../../profile/provider/profile_provider.dart';
 import '../../../configs/global/context.dart';
+import '../../../data/local_db/local_db_service.dart';
 import '../../../res/components/app_snackbar.dart';
 
 class AuthNotifier extends Notifier<AuthState> {
@@ -112,6 +114,8 @@ class AuthNotifier extends Notifier<AuthState> {
   Future<void> signOut() async {
     try {
       await ref.read(authServiceProvider).signOut();
+      await LocalDbService.clearCart();
+      ref.invalidate(userProfileProvider);
       AppContext.navigatorKey.currentContext?.goNamed(AuthScreen.routeName);
     } catch (_) {
       AppSnackbar.show('Sign out failed. Please try again.');

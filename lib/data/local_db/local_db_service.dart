@@ -63,6 +63,14 @@ class LocalDbService {
     yield* db.cartItems.where().watch(fireImmediately: true);
   }
 
+  // Clear all cart items
+  static Future<void> clearCart() async {
+    final db = await isar;
+    await db.writeTxn(() async {
+      await db.cartItems.clear();
+    });
+  }
+
   // Get count for a specific item
   static Future<int> getItemCount(String title) async {
     final db = await isar;
